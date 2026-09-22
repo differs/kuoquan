@@ -2,7 +2,5 @@
 build/*.epub
 build/*.html
 build/*.pdf
-
-# 系统
-.DS_Store
-*.swp
+build/*.png
+build/cover-*.svg

@@ -1,0 +1,94 @@
+/* 《扩圈》/ Expanding the Circle — 阅读与印刷样式 */
+:root {
+  --ink: #14181f;
+  --muted: #5b6675;
+  --accent: #a5761f;
+  --rule: #d8d2c4;
+}
+
+html { font-size: 17px; }
+
+body {
+  font-family: "Noto Serif CJK SC", "Noto Serif", Georgia, serif;
+  line-height: 1.9;
+  color: var(--ink);
+  background: #fbfaf7;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.4rem 6rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+#title-block-header {
+  text-align: center;
+  margin: 22vh 0 14vh;
+}
+#title-block-header .title {
+  font-size: 3.4rem;
+  letter-spacing: 0.35em;
+  margin: 0 0 1rem;
+}
+#title-block-header .subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin: 0.4rem 0;
+}
+#title-block-header .author { color: var(--accent); margin-top: 2.4rem; letter-spacing: 0.2em; }
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin: 3.2rem 0 1.4rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--rule);
+  break-before: page;
+}
+h1:first-of-type { break-before: avoid; }
+
+h2 { font-size: 1.28rem; margin: 2.2rem 0 0.8rem; color: #1e2530; }
+h3 { font-size: 1.08rem; margin: 1.6rem 0 0.5rem; color: #2a3340; }
+
+p { margin: 0.85rem 0; }
+
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.5rem 0 0.5rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  color: #2b2f36;
+  background: rgba(165, 118, 31, 0.05);
+}
+
+strong { color: #10141a; }
+
+ul, ol { margin: 0.8rem 0 0.8rem 0.4rem; padding-left: 1.4rem; }
+li { margin: 0.35rem 0; }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.4rem 0; }
+
+a { color: var(--accent); text-decoration: none; }
+
+nav#TOC {
+  break-before: page;
+  font-size: 0.98rem;
+  margin-bottom: 3rem;
+}
+nav#TOC h2 { text-align: center; }
+nav#TOC ul { list-style: none; padding-left: 0; line-height: 2.1; }
+
+/* 印刷 */
+@page {
+  size: A5;
+  margin: 18mm 16mm 20mm;
+}
+@media print {
+  body { background: #fff; max-width: none; padding: 0; font-size: 10.5pt; }
+  #title-block-header { margin: 18vh 0 10vh; }
+  #title-block-header .title { font-size: 3rem; }
+  h1 { break-before: page; }
+  h1:first-of-type { break-before: avoid; }
+  a { color: var(--ink); }
+  blockquote { background: none; }
+  p, blockquote, li { orphans: 3; widows: 3; }
+}
