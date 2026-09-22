@@ -1,0 +1,8 @@
+# 构建产物
+build/*.epub
+build/*.html
+build/*.pdf
+
+# 系统
+.DS_Store
+*.swp
