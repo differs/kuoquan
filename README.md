@@ -46,6 +46,7 @@
 **第四部 · 当代**
 11. [AI 时代：圈的新边疆](book/11-ai-frontier.md)
 12. [从人治到自治：秩序的最后一公里](book/12-self-governance.md)
+13. [归属：AI 红利的分配算术](book/13-ownership.md)
 
 - [结语 · 身份与选择](book/99-epilogue.md)
 

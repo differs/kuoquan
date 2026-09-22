@@ -27,6 +27,7 @@ FILES=(
   "$BOOK/10-dividend.md"
   "$BOOK/11-ai-frontier.md"
   "$BOOK/12-self-governance.md"
+  "$BOOK/13-ownership.md"
   "$BOOK/99-epilogue.md"
 )
 
