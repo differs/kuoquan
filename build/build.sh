@@ -29,6 +29,7 @@ FILES=(
   "$BOOK/12-self-governance.md"
   "$BOOK/13-ownership.md"
   "$BOOK/99-epilogue.md"
+  "$BOOK/afterword.md"
 )
 
 echo "==> 构建 EPUB"

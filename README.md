@@ -49,6 +49,7 @@
 13. [归属：AI 红利的分配算术](book/13-ownership.md)
 
 - [结语 · 身份与选择](book/99-epilogue.md)
+- [后记 · 从一场争论开始](book/afterword.md)
 
 ---
 
